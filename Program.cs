@@ -1,13 +1,19 @@
 ﻿using DesafioPOO.Models;
 
-Console.WriteLine("Smartphone Nokia:");
-Smartphone nokia = new Nokia(numero: "1234", modelo: "Modelo Axx", imei: "748349", memoria: 32);
-nokia.Ligar();
-nokia.InstalarAplicativo("WhatsApp");
 // TODO: Realizar os testes com as classes Nokia e Iphone
 
-Console.WriteLine("Smartphone iPhone:");
-Smartphone iphone = new Iphone(numero: "54321", modelo: "Modelo I4", imei: "99239", memoria: 128);
+Console.WriteLine("Smartphone Nokia:");
+Smartphone nokia = new Nokia("1234", "Modelo Axx", "748349", 32);
+nokia.Ligar();
+nokia.ReceberLigacao();
+nokia.InstalarAplicativo("WhatsApp");
+
+Console.WriteLine("\nSmartphone iPhone:");
+Smartphone iphone = new Iphone("54321", "Modelo I4", "99239", 128);
 iphone.Ligar();
+iphone.ReceberLigacao();
 iphone.InstalarAplicativo("Instagram");
+
+
+
 
